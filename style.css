@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  background: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  background: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.container {
+  background: #fff;
+  padding: 6rem 6rem;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+}
+.input_container {
+  display: flex;
+  align-items: flex-end;
+}
+.input_container > input {
+  border: none;
+  border-bottom: 0.1rem solid rebeccapurple;
+  font-family: inherit;
+  font-size: 1.7rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+.checkBtn {
+  background: rebeccapurple;
+  color: #fff;
+  font-size: 1.8rem;
+}
+.result {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 458px) {
+  .container {
+    width: 90%;
+  }
+  .input_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .checkBtn {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 4rem 2rem;
+  }
+}
