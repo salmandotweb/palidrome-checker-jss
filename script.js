@@ -17,10 +17,14 @@ function palidrome(e) {
     .toLowerCase();
 
   let flip = last.split("").reverse().join("");
-  if (first == flip) {
-    result.innerHTML = `${inputValue.toUpperCase()} is a Polidrome Word.`;
+  if (inputValue === "") {
+    alert("Enter a word");
   } else {
-    result.innerHTML = `${inputValue.toUpperCase()} is Not a Polidrome Words.`;
+    if (first == flip) {
+      result.innerHTML = `${inputValue.toUpperCase()} is a Polidrome Word.`;
+    } else {
+      result.innerHTML = `${inputValue.toUpperCase()} is Not a Polidrome Words.`;
+    }
   }
   form.reset();
 }
